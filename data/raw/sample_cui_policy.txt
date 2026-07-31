@@ -1,0 +1,27 @@
+SAMPLE DOCUMENT — SYNTHETIC. For pipeline demonstration and testing only.
+This is NOT an official DoD issuance. Replace with real documents via scripts/fetch_corpus.py.
+
+SAMPLE INSTRUCTION 5200.XX — CONTROLLED UNCLASSIFIED INFORMATION (DEMO TEXT)
+
+1. PURPOSE. Establishes sample policy for the designation, marking, safeguarding,
+dissemination, decontrol, and destruction of controlled unclassified information (CUI).
+
+2. POLICY.
+a. CUI is information the government creates or possesses that requires safeguarding
+or dissemination controls pursuant to law, regulation, or government-wide policy.
+b. CUI shall be processed only on information systems authorized at the appropriate
+impact level. Cloud systems processing CUI require authorization at Impact Level 4
+(IL4) or Impact Level 5 (IL5) depending on the sensitivity of the information.
+c. Personnel shall complete initial and annual refresher training on CUI handling.
+d. CUI transmitted electronically shall be encrypted in transit and at rest using
+approved cryptographic mechanisms.
+e. Unauthorized disclosure of CUI shall be reported and may result in administrative
+or disciplinary action.
+
+3. MARKING. Documents containing CUI shall bear the CUI banner marking, category
+markings where required, and dissemination control markings such as limited
+dissemination controls.
+
+4. SAFEGUARDING. Access to CUI shall be limited to individuals with a lawful
+government purpose. Common access card (CAC) authentication is required for systems
+hosting CUI.

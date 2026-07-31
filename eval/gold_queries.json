@@ -1,0 +1,50 @@
+[
+  {
+    "query": "human judgment over the use of force in autonomous weapon systems",
+    "relevant_docs": ["sample_ai_governance_directive"]
+  },
+  {
+    "query": "how must CUI be marked and safeguarded",
+    "relevant_docs": ["sample_cui_policy"]
+  },
+  {
+    "query": "impact level required for cloud systems processing controlled unclassified information",
+    "relevant_docs": ["sample_cui_policy", "sample_data_strategy"]
+  },
+  {
+    "query": "responsible AI principles traceable reliable governable",
+    "relevant_docs": ["sample_data_strategy"]
+  },
+  {
+    "query": "verification and validation test and evaluation of autonomy",
+    "relevant_docs": ["sample_ai_governance_directive", "sample_data_strategy"]
+  },
+  {
+    "query": "upskilling workforce in data science and machine learning",
+    "relevant_docs": ["sample_data_strategy"]
+  },
+  {
+    "query": "zero trust architecture never trust always verify least privilege",
+    "relevant_docs": ["sample_zero_trust_directive"]
+  },
+  {
+    "query": "phishing-resistant multifactor authentication for privileged accounts",
+    "relevant_docs": ["sample_zero_trust_directive"]
+  },
+  {
+    "query": "reporting and containment procedures for a ransomware cyber incident",
+    "relevant_docs": ["sample_incident_response_manual"]
+  },
+  {
+    "query": "indicators of compromise correlated against threat intelligence",
+    "relevant_docs": ["sample_incident_response_manual"]
+  },
+  {
+    "query": "software bill of materials SBOM to identify vulnerable components",
+    "relevant_docs": ["sample_supply_chain_policy"]
+  },
+  {
+    "query": "supply chain risk management for open-source software before ATO",
+    "relevant_docs": ["sample_supply_chain_policy"]
+  }
+]

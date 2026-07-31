@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PolicyScout</title>
+<style>
+  :root { --bg:#0f1419; --panel:#1a2129; --border:#2c3a47; --text:#e6edf3; --dim:#8b98a5; --accent:#4a9eda; --good:#3fb27f; }
+  * { box-sizing:border-box; margin:0; }
+  body { background:var(--bg); color:var(--text); font:15px/1.55 system-ui,sans-serif; max-width:880px; margin:0 auto; padding:32px 20px; }
+  h1 { font-size:22px; letter-spacing:.5px; } h1 span { color:var(--accent); }
+  .sub { color:var(--dim); font-size:13px; margin:4px 0 24px; }
+  form { display:flex; gap:8px; margin-bottom:10px; }
+  input[type=text] { flex:1; background:var(--panel); border:1px solid var(--border); border-radius:8px; padding:11px 14px; color:var(--text); font-size:15px; }
+  button { background:var(--accent); border:0; border-radius:8px; padding:11px 18px; color:#fff; font-weight:600; cursor:pointer; }
+  button.alt { background:var(--panel); border:1px solid var(--border); }
+  .card { background:var(--panel); border:1px solid var(--border); border-radius:10px; padding:14px 16px; margin:10px 0; }
+  .cite { color:var(--accent); font-family:monospace; font-size:12px; }
+  .sec { color:var(--good); font-size:12px; text-transform:uppercase; letter-spacing:.4px; }
+  .score { float:right; color:var(--dim); font-family:monospace; font-size:12px; }
+  .answer { border-left:3px solid var(--good); }
+  .dim { color:var(--dim); font-size:13px; }
+  .expanded { font-size:12px; color:var(--dim); margin:4px 0 0; font-style:italic; }
+</style>
+</head>
+<body>
+<h1>Policy<span>Scout</span></h1>
+<p class="sub">Hybrid semantic search &amp; cited answers over DoD policy documents — GAMECHANGER-inspired demo</p>
+<form id="f">
+  <input type="text" id="q" placeholder="e.g. what level of human judgment is required over the use of force?" autofocus>
+  <button type="submit">Search</button>
+  <button type="button" class="alt" id="ans">Answer</button>
+</form>
+<div id="out"></div>
+<script>
+const out = document.getElementById('out');
+const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+async function search() {
+  const q = document.getElementById('q').value.trim(); if (!q) return;
+  out.innerHTML = '<p class="dim">Searching…</p>';
+  const r = await fetch(`/search?q=${encodeURIComponent(q)}`); const d = await r.json();
+  out.innerHTML = d.results.map(h => `
+    <div class="card">
+      <span class="cite">${esc(h.doc_id)}#${h.chunk_id}</span>
+      ${h.section ? `<span class="sec"> · ${esc(h.section)}</span>` : ''}
+      <span class="score">rrf ${h.score} · tfidf ${h.tfidf} · bm25 ${h.bm25}</span>
+      <p>${esc(h.text)}</p>
+      ${h.expanded_query ? `<p class="expanded">expanded: ${esc(h.expanded_query)}</p>` : ''}
+    </div>`).join('') || '<p class="dim">No results.</p>';
+}
+async function answer() {
+  const q = document.getElementById('q').value.trim(); if (!q) return;
+  out.innerHTML = '<p class="dim">Composing answer…</p>';
+  const r = await fetch(`/answer?q=${encodeURIComponent(q)}`); const d = await r.json();
+  out.innerHTML = `<div class="card answer"><p>${esc(d.answer)}</p></div>` +
+    d.sentences.map(s => `<div class="card"><span class="cite">${esc(s.citation)}</span><p>${esc(s.text)}</p></div>`).join('');
+}
+document.getElementById('f').addEventListener('submit', e => { e.preventDefault(); search(); });
+document.getElementById('ans').addEventListener('click', answer);
+</script>
+</body>
+</html>

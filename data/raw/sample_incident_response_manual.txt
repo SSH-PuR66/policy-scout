@@ -1,0 +1,25 @@
+SAMPLE DOCUMENT — SYNTHETIC. For pipeline demonstration and testing only.
+This is NOT an official DoD issuance. Replace with real documents via scripts/fetch_corpus.py.
+
+SAMPLE MANUAL 8530.XX — CYBER INCIDENT RESPONSE (DEMO TEXT)
+
+1. PURPOSE. Establishes sample procedures for detecting, reporting, and responding to
+cyber incidents affecting sample information systems, including ransomware and data
+spillage events.
+
+2. PROCEDURES.
+a. Detection. Security operations centers shall monitor logging and telemetry for
+indicators of compromise (IOC) and correlate threat intelligence against observed
+activity.
+b. Reporting. A suspected cyber incident shall be reported to the sample computer
+emergency response team within one hour of detection.
+c. Containment. Responders shall contain affected hosts to prevent lateral movement,
+preserving audit records and forensic artifacts for later analysis.
+d. Eradication and Recovery. Malware shall be removed, exploited vulnerabilities
+remediated, and systems restored from known-good backups before reconnection.
+e. Spillage. Unauthorized disclosure of classified or controlled unclassified
+information onto a lower-authorization system shall trigger sanitization of affected
+media in accordance with approved destruction procedures.
+
+3. POST-INCIDENT. A lessons-learned review shall update detection content, response
+runbooks, and the threat intelligence knowledge base after every major incident.

@@ -1,0 +1,30 @@
+SAMPLE DOCUMENT — SYNTHETIC. For pipeline demonstration and testing only.
+This is NOT an official DoD issuance. Replace with real documents via scripts/fetch_corpus.py.
+
+SAMPLE STRATEGY — DATA, ANALYTICS, AND AI ADOPTION (DEMO TEXT)
+
+1. VISION. Accelerate the adoption of data, analytics, and artificial intelligence to
+generate decision advantage across the enterprise, from the boardroom to the
+battlefield.
+
+2. GOALS.
+a. Invest in interoperable, federated data infrastructure.
+b. Advance a robust data, analytics, and AI ecosystem with shared services and
+reusable components.
+c. Expand digital talent management, including upskilling the workforce in data
+science and machine learning.
+d. Improve foundational data management: cataloging, governance, quality, and access
+controls for enterprise data assets.
+e. Deliver capabilities for enterprise business analytics, including executive
+performance dashboards and readiness analytics.
+f. Strengthen governance and remove policy barriers to responsible AI adoption.
+
+3. RESPONSIBLE AI. All AI capabilities shall be developed and deployed in accordance
+with responsible AI principles: responsible, equitable, traceable, reliable, and
+governable. Test and evaluation of AI models shall address robustness, resiliency,
+explainability, and reproducibility.
+
+4. IMPLEMENTATION. An agile, iterative approach with continuous integration and
+continuous delivery (CI/CD) pipelines, DevSecOps practices, and cloud infrastructure
+authorized at appropriate impact levels, including Impact Level 5 (IL5) for
+controlled unclassified information (CUI).

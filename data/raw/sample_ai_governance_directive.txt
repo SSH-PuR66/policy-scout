@@ -1,0 +1,25 @@
+SAMPLE DOCUMENT — SYNTHETIC. For pipeline demonstration and testing only.
+This is NOT an official DoD issuance. Replace with real documents via scripts/fetch_corpus.py.
+
+SAMPLE DIRECTIVE 3000.XX — AUTONOMY IN WEAPON SYSTEMS (DEMO TEXT)
+
+1. PURPOSE. This sample directive establishes policy and assigns responsibilities for
+the development and use of autonomous and semi-autonomous functions in weapon systems,
+including guidance on human judgment over the use of force.
+
+2. POLICY. It is sample policy that:
+a. Autonomous and semi-autonomous weapon systems shall be designed to allow commanders
+and operators to exercise appropriate levels of human judgment over the use of force.
+b. Systems will go through rigorous hardware and software verification and validation
+(V&V) and realistic system developmental and operational test and evaluation (T&E).
+c. Training, doctrine, and tactics, techniques, and procedures (TTPs) shall be
+established to ensure operators understand the functioning, capabilities, and
+limitations of the system's autonomy in realistic operational conditions.
+
+3. RESPONSIBILITIES. The sample senior official for autonomy oversees implementation,
+coordinates test and evaluation infrastructure, and reviews systems prior to formal
+development and again before fielding.
+
+4. RISK MITIGATION. Design and V&V measures shall minimize the probability and
+consequences of failures that could lead to unintended engagements, including
+safeties, anti-tamper mechanisms, and human-machine interfaces.

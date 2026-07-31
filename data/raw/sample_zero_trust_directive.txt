@@ -1,0 +1,27 @@
+SAMPLE DOCUMENT — SYNTHETIC. For pipeline demonstration and testing only.
+This is NOT an official DoD issuance. Replace with real documents via scripts/fetch_corpus.py.
+
+SAMPLE DIRECTIVE 8500.XX — ZERO TRUST CYBERSECURITY REFERENCE (DEMO TEXT)
+
+1. PURPOSE. Establishes sample policy for adoption of a zero trust architecture
+across sample enterprise information systems, superseding perimeter-centric
+assumptions of implicit trust.
+
+2. POLICY.
+a. The department shall adopt a zero trust architecture in which no user, device,
+or network flow is trusted by default. Access decisions shall be made per-request
+and continuously re-evaluated.
+b. Identity, credential, and access management (ICAM) shall enforce phishing-resistant
+multifactor authentication for all privileged and non-privileged accounts.
+c. Systems shall enforce least privilege and separation of duties, granting the
+minimum access required by mission need to know.
+d. Microsegmentation shall isolate workloads so that compromise of one enclave does
+not grant lateral movement to another.
+e. Continuous monitoring shall provide ongoing authorization, replacing point-in-time
+accreditation with a dynamic security posture assessment.
+
+3. RESPONSIBILITIES. The sample chief information security officer oversees zero trust
+implementation, target maturity milestones, and reporting under the risk management
+framework (RMF) and NIST 800-53 security controls.
+
+4. REFERENCES. DoDI 8510.01; NIST SP 800-207.

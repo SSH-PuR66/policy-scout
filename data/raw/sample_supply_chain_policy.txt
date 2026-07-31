@@ -1,0 +1,24 @@
+SAMPLE DOCUMENT — SYNTHETIC. For pipeline demonstration and testing only.
+This is NOT an official DoD issuance. Replace with real documents via scripts/fetch_corpus.py.
+
+SAMPLE INSTRUCTION 5200.YY — SOFTWARE SUPPLY CHAIN RISK MANAGEMENT (DEMO TEXT)
+
+1. PURPOSE. Establishes sample policy for software supply chain risk management (SCRM)
+across the acquisition and sustainment lifecycle of sample capabilities.
+
+2. POLICY.
+a. Programs shall obtain a software bill of materials (SBOM) for delivered software,
+maintaining a component inventory sufficient to identify affected products when a new
+vulnerability (CVE) is disclosed.
+b. Vendors shall attest to secure software development practices consistent with
+DevSecOps and the secure software development framework.
+c. Continuous integration and continuous delivery (CI/CD) pipelines shall enforce
+static and dynamic security testing, dependency scanning, and signed artifacts before
+promotion to production.
+d. Third-party and open-source components shall be evaluated for provenance, known
+vulnerabilities, and vendor risk before authorization to operate (ATO).
+e. Compromise of a supplier shall be treated as a potential intrusion vector and
+trigger incident response and re-assessment of affected authorization boundaries.
+
+3. RESPONSIBILITIES. The sample program executive office maintains the SCRM register
+and reports supply chain risk posture under the risk management framework.
