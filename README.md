@@ -1,5 +1,11 @@
 # PolicyScout
 
+**Created and maintained by [Sergio Rodriguez (SSH-PuR66)](https://github.com/SSH-PuR66).**
+
+**A retrieved passage has to earn its citation.** Trace a query through the retrieval pipeline, then inspect the [evaluation](eval/) and [critique log](docs/CRITIQUE.md). The measured ranking and citation results below describe the bundled 12-query / 6-document corpus.
+
+GAMECHANGER is the stated design inspiration. The Azure Government document is a deployment plan, not a claim that this repository has an accredited deployment.
+
 **GAMECHANGER-inspired semantic search over DoD policy documents.**
 
 **v0.4** — hybrid sparse-BM25+TF-IDF retrieval with RRF fusion, DoD-domain query expansion (cyber-ops thesaurus), MMR diversification, cited extractive QA with a **cross-encoder-shaped reranker** (citation precision 0.94 → **1.00**), a grounded-LLM composer seam, nDCG + citation-precision eval gates over a **12-query / 6-document** set, `/metrics` with **Prometheus export**, and a built-in web UI at `/`.
